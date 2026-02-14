@@ -33,8 +33,17 @@ The resume uses this section order:
 4. **Highlights** — notable work with optional tags (`.highlight-block`)
 5. **Experience** — job history with bullet points (`.job`, `.job-header`)
 6. **Recognition** — awards, publications, community (`.recognition-list`)
+7. **Footer** — "Built with Claude Resume Builder" link (`.footer`)
 
 Each section uses an `<h2>` with `::before { content: "> " }` for the terminal prompt aesthetic.
+
+Always include a footer at the bottom of the resume:
+```html
+<div class="footer">
+  Built with <a href="https://github.com/adamenger/claude-resume-builder">Claude Resume Builder</a>
+</div>
+```
+Style it with muted text, centered, `font-size: 7.5pt`, with a `border-top` divider.
 
 ## Available Commands
 
