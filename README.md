@@ -1,6 +1,6 @@
 # Claude Resume Builder
 
-Build a polished, ATS-friendly resume with a dark terminal aesthetic — powered by Claude Code.
+Build a polished, ATS-friendly resume styled to your liking — powered by Claude Code. Ships with a dark terminal theme by default, fully customizable via `config.yaml`.
 
 Clone the repo, fire up `claude`, and have an interactive resume-building experience. Drop in your existing resume as a text file or start from scratch.
 
