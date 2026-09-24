@@ -1,0 +1,13 @@
+# Printable light theme — white background, dark text (ink-friendly).
+# Same structure as config.yaml; build with:  make build-light  /  make build-dsp-light
+theme:
+  bg: "#ffffff"
+  text: "#1f2328"
+  muted: "#59636e"
+  accent: "#b01a5f"
+  border: "#d1d9e0"
+  code_bg: "#f6f8fa"
+  bright: "#0d1117"
+  font: "'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace"
+  font_import: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+  padding: "0.5in 0.6in"

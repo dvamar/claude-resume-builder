@@ -4,7 +4,8 @@ import sys
 import re
 import pypdf
 
-reader = pypdf.PdfReader("resume.pdf")
+pdf_path = sys.argv[1] if len(sys.argv) > 1 else "resume.pdf"
+reader = pypdf.PdfReader(pdf_path)
 text = "\n".join(page.extract_text() for page in reader.pages)
 
 checks = {

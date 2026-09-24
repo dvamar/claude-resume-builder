@@ -4,13 +4,14 @@ import re
 import sys
 import yaml
 
-CONFIG = "config.yaml"
-INPUT = "resume.html"
-OUTPUT = ".resume_themed.html"
-
-
 def main():
-    with open(CONFIG) as f:
+    # Args: [base] [config] -> reads <base>.html + <config>, writes .<base>_themed.html
+    base = sys.argv[1] if len(sys.argv) > 1 else "resume"
+    config_path = sys.argv[2] if len(sys.argv) > 2 else "config.yaml"
+    INPUT = f"{base}.html"
+    OUTPUT = f".{base}_themed.html"
+
+    with open(config_path) as f:
         config = yaml.safe_load(f)
 
     theme = config["theme"]

@@ -3,9 +3,16 @@ resume.html
 resume.pdf
 resume.txt
 resume_old.txt
+resume_dsp.html
+resume_dsp.pdf
+resume_light.pdf
+resume_dsp_light.pdf
+resume_dsp.txt
+interview_notes.md
 
 # Theme temp file
 .resume_themed.html
+.resume_dsp_themed.html
 
 # Python
 __pycache__/
