@@ -44,6 +44,8 @@ fi
   --headless \
   --disable-gpu \
   --no-pdf-header-footer \
+  --run-all-compositor-stages-before-draw \
+  --virtual-time-budget=10000 \
   --print-to-pdf="$OUT" \
   "$IN"
 

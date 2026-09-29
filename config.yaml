@@ -2,7 +2,7 @@ theme:
   bg: "#0d1117"
   text: "#c9d1d9"
   muted: "#8b949e"
-  accent: "#e66386"
+  accent: "#58a6ff"
   border: "#30363d"
   code_bg: "#161b22"
   bright: "#f0f6fc"
