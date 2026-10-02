@@ -78,3 +78,30 @@ When the user asks to start fresh:
 1. Gather their information (from file or interactively)
 2. Generate `resume.html` following the template structure
 3. Build and test with `make build && make test`
+
+## Writing & Quality Guidelines
+
+**Tone — show, don't tell.** Write confidently and matter-of-factly. Avoid eager
+"trying too hard" language (*passionate, pursuing, enthusiastic, eager to learn,
+looking to grow*) and self-praise adjectives — state facts and let them speak.
+State the target role once (a short objective line), not repeatedly. Cut redundancy
+across Profile / Skills / Experience: don't re-list in the summary what the bullets
+and skills already show.
+
+**Honesty.** Only include claims the person could defend in an interview. Never
+invent coursework they didn't take, tools they didn't use, or metrics they can't
+explain. Before adding a number/metric, make sure its meaning is understood.
+
+**One page, well-filled.** Keep resumes to a single page, filling roughly 88–93% of
+it — not cramped, not half-empty. Measure actual fill, not just page count (with
+`pymupdf`: max `y1` from `page.get_text("blocks")` ÷ `page.rect.height`). Loosen
+font size/spacing to fill space; tighten to avoid spilling to a second page.
+
+**Prose style.** Avoid em-dashes in paragraph prose (reads AI-generated); use commas,
+colons, or semicolons. Keep each HTML `<li>`/element on a single line so wrapping and
+layout stay predictable.
+
+**Verify the real PDF, not the HTML.** Chrome embeds web fonts into the PDF as unnamed
+Type3 glyphs, so a font name-scan shows only fallbacks and HTML screenshots can
+misrepresent the output. Render the actual `resume.pdf` to an image (`pymupdf`
+`page.get_pixmap()`) to confirm fonts, colors, and layout are what shipped.
